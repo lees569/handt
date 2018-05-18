@@ -1558,7 +1558,8 @@ input::-moz-focus-inner {
   right: 100%;
 }
 .header-menu-toggle.opaque {
-  background-color: #000000;
+  background-color: #111111;
+  border-radius: 5px;
 }
 .header-menu-toggle.opaque::before {
   display: none;
@@ -1768,30 +1769,17 @@ input::-moz-focus-inner {
 .home-sidelinks li {
   display: block;
   padding: 0;
-  text-align: left;
-  background-color: rgba(0, 0, 0, 0.2);
-  border-top: 1px solid rgba(255, 255, 255, 0.05);
+  text-align: right;
+
+  border-right: 0px solid rgba(255, 255, 255, 0);
+  
   -webkit-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
   position: relative;
 }
-.home-sidelinks li:last-child {
-  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
-}
-.home-sidelinks li::before {
-  content: "";
-  display: block;
-  height: 6px;
-  width: 6px;
-  background-color: #00d1c2;
-  border-radius: 50%;
-  position: absolute;
-  top: 3rem;
-  left: 2rem;
-}
 .home-sidelinks a {
   display: block;
-  padding: 2.1rem 15rem 2.1rem 4rem;
+  padding: 2.1rem 7rem 2.1rem 4rem;
   color: #ffffff;
 }
 .home-sidelinks span {
@@ -1802,10 +1790,13 @@ input::-moz-focus-inner {
   color: rgba(255, 255, 255, 0.5);
   text-transform: none;
   letter-spacing: 0;
+
+
 }
 .home-sidelinks li:hover {
-  background-color: rgba(0, 0, 0, 0.5);
-  border-top: 1px solid rgba(0, 0, 0, 0.1);
+/*    border-radius: 2px;*/
+    border-right: 7px solid #00d1c2;
+    transition: .8s;
 }
 
 
@@ -3149,8 +3140,9 @@ html.no-csstransitions .home-content__main {
  * ## go to top
  * ------------------------------------------------------------------- */
 .cl-go-top {
+    display: none;
   z-index: 600;
-  position: absolute;
+  position: fixed;
   bottom: 10.8rem;
   right: 105px;
 }
@@ -3180,16 +3172,18 @@ html.no-csstransitions .home-content__main {
   color: #000000;
 }
 .cl-go-top::before {
+  z-index: 600;
   content: "";
   display: block;
   width: 1px;
   height: 100px;
-  background-color: rgba(255, 255, 255, 0.1);
+  background-color: lightslategray;
   position: absolute;
   top: -115px;
   left: 50%;
 }
 .cl-go-top::after {
+  z-index: 600;
   content: "back to top";
   display: inline-block;
   width: 120px;
@@ -3197,7 +3191,7 @@ html.no-csstransitions .home-content__main {
   line-height: 30px;
   text-transform: uppercase;
   letter-spacing: 0.2rem;
-  color: rgba(255, 255, 255, 0.15);
+  color: lightslategray;
   -webkit-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
   -webkit-transform: rotate(-90deg);
