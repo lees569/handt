@@ -79,8 +79,12 @@ body {
   color: #555555;
   margin: 0;
   padding: 0;
+ 
+      
 }
-
+::-webkit-scrollbar {
+    width: 0px;  /* remove scrollbar space */
+    background: transparent; }
 /* ------------------------------------------------------------------- 
  * ## links
  * ------------------------------------------------------------------- */
@@ -1469,7 +1473,7 @@ input::-moz-focus-inner {
 .header-nav__close {
   z-index: 800;
   display: block;
-  background-color: rgba(0, 0, 0, 0.3);
+  background-color: #0c0c0c;
   height: 30px;
   width: 30px;
   border-radius: 3px;
@@ -1675,6 +1679,7 @@ input::-moz-focus-inner {
   background-color: transparent;
   position: relative;
   display: table;
+
 }
 .s-home .shadow-overlay {
   position: absolute;
@@ -1711,11 +1716,11 @@ input::-moz-focus-inner {
   height: 100%;
   vertical-align: middle;
   padding-bottom: 15.6rem;
-  overflow: hidden;
+/*  overflow: hidden;*/
   position: relative;
 }
 .home-content h1 {
-  font-family: "domine-bold", sans-serif;
+  font-family: "metropolis-bold", sans-serif;
   font-size: 9rem;
   line-height: 1.1;
   margin-top: 0;
@@ -1860,6 +1865,7 @@ input::-moz-focus-inner {
   position: absolute;
   bottom: 6.6rem;
   left: 110px;
+  
 }
 .home-social a {
   color: #ffffff;
@@ -1980,10 +1986,10 @@ html.no-csstransitions .home-content__main {
  * ------------------------------------------------------------------- */
 @media only screen and (max-width: 1600px) {
   .home-content h1 {
-    font-size: 8.8rem;
+    font-size: 4.8rem;
   }
   .home-content h1 + p {
-    font-size: 3.6rem;
+    font-size: 2.6rem;
   }
 
   .home-content__main {
@@ -2004,7 +2010,7 @@ html.no-csstransitions .home-content__main {
 }
 @media only screen and (max-width: 1500px) {
   .home-content h1 {
-    font-size: 8.6rem;
+    font-size: 4.6rem;
   }
 
   .home-content__main {
@@ -2013,10 +2019,10 @@ html.no-csstransitions .home-content__main {
 }
 @media only screen and (max-width: 1400px) {
   .home-content h1 {
-    font-size: 7.8rem;
+    font-size: 3.8rem;
   }
   .home-content h1 + p {
-    font-size: 3rem;
+    font-size: 2rem;
   }
   .home-content h1 + p::before {
     top: 2.4rem;
@@ -2032,7 +2038,7 @@ html.no-csstransitions .home-content__main {
 }
 @media only screen and (max-width: 1200px) {
   .home-content h1 {
-    font-size: 7.2rem;
+    font-size: 3.2rem;
   }
   .home-content h1 + p {
     font-size: 2.4rem;
@@ -2067,12 +2073,12 @@ html.no-csstransitions .home-content__main {
 }
 @media only screen and (max-width: 900px) {
   .home-content h1 {
-    font-size: 7rem;
+    font-size: 3rem;
   }
 }
 @media only screen and (max-width: 800px) {
   .home-content h1 {
-    font-size: 6.5rem;
+    font-size: 3rem;
   }
 
   .home-content__main {
@@ -2092,10 +2098,10 @@ html.no-csstransitions .home-content__main {
 }
 @media only screen and (max-width: 700px) {
   .home-content h1 {
-    font-size: 5.5rem;
+    font-size: 2.5rem;
   }
   .home-content h1 + p {
-    font-size: 2.2rem;
+    font-size: 1.2rem;
     padding-right: 0;
   }
   .home-content h1 + p::before {
@@ -2108,7 +2114,7 @@ html.no-csstransitions .home-content__main {
 }
 @media only screen and (max-width: 600px) {
   .home-content h1 {
-    font-size: 5.4rem;
+    font-size: 2.4rem;
   }
   .home-content h1 + p {
     padding-top: 3rem;
@@ -2148,7 +2154,7 @@ html.no-csstransitions .home-content__main {
 }
 @media only screen and (max-width: 500px) {
   .home-content h1 {
-    font-size: 5rem;
+    font-size: 2.3rem;
   }
   .home-content h1 + p {
     padding-top: 2.8rem;
@@ -2160,7 +2166,7 @@ html.no-csstransitions .home-content__main {
 }
 @media only screen and (max-width: 450px) {
   .home-content h1 {
-    font-size: 4.6rem;
+    font-size: 2.1rem;
   }
   .home-content h1 + p {
     padding-top: 2.4rem;
@@ -2172,7 +2178,7 @@ html.no-csstransitions .home-content__main {
   }
 
   .home-content h1 {
-    font-size: 4.2rem;
+    font-size: 2.2rem;
   }
   .home-content h1 + p {
     padding-top: 2.1rem;
