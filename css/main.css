@@ -1699,8 +1699,8 @@ input::-moz-focus-inner {
   left: 0;
   width: 100%;
   height: 100%;
-  opacity: 0.65;
-  background-color: #000000;
+  opacity: 0.2;
+  background-color: #111111;
 }
 
 .no-js .s-home {
@@ -1717,9 +1717,9 @@ input::-moz-focus-inner {
   height: 100%;
   vertical-align: middle;
   padding-bottom: 15.6rem;
-/*  overflow: hidden;*/
+  overflow: hidden;
   position: relative;
-  background-color: #111111;
+/*  background-color: #111111;*/
   
 }
 .home-content h1 {
